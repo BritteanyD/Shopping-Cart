@@ -34,7 +34,7 @@ const Coffee = () => {
               </Link>
             </li>
             <li>
-              <Link to="shop" className="shop">SHOP</Link>
+              <Link to="/shop" className="shop">SHOP</Link>
             </li>
             <li>
               <Link to="/cart" className="cart">
