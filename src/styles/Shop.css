@@ -1,0 +1,29 @@
+.shopContainer {
+    background-color: #fbeee0; 
+}
+
+.coffeeGrid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.coffeeItems {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.coffeeImage {
+    width: 100%;
+}
+
+.coffeeImage:hover {
+    transform: scale(1.1);
+}
+
+.coffeeInfo {
+    color:#422800;
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    margin: 40px;
+}

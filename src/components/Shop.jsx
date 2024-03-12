@@ -30,17 +30,25 @@ const Shop = () => {
   }, [coffeeData, id]);
 
   return (
-    <div>
+    <div className="shopContainer">
       {coffeeData ? (
-        <ul>
+        <div className="coffeeGrid">
           {coffeeData.map((coffee) => (
-            <li key={coffee.id}>
-              <Link to={`/coffee/${coffee.id}`}>{coffee.name}</Link>
-              <p>{coffee.description}</p>
-              <p>Price: ${coffee.price}</p>
-            </li>
+            <div className="coffeeItems" key={coffee.id}>
+              <Link to={`/coffee/${coffee.id}`}>
+                <img
+                  className="coffeeImage"
+                  src={coffee.image_url}
+                  alt={coffee.name}
+                />
+              </Link>
+              <div className="coffeeInfo">
+                <p>{coffee.name}</p>
+                <p>Price: ${coffee.price}</p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <p>Loading coffees...</p>
       )}
