@@ -19,11 +19,17 @@ const Coffee = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="coffeeContainer">
       {coffeeData === null ? (
         <p>Loading coffee...</p>
       ) : (
-        <pre>{JSON.stringify(coffeeData)}</pre>
+        <div>
+          <h2>{coffeeData.name}</h2>
+          <pre>
+            <code>{JSON.stringify(coffeeData, null, 2)}</code>
+          </pre>
+          <button onClick={onAdd}>Add to Cart</button>
+        </div>
       )}
     </div>
   );

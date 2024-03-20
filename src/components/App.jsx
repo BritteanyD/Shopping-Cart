@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shop from "./Shop.jsx";
 import Cart from "./Cart.jsx";
@@ -17,7 +17,12 @@ const Layout = () => {
   );
 };
 
-//update router configuration to use the Layout component and nested routes
+
+
+const App = () => {
+  const [message, setMessage] = useState('hello world 754');
+  
+ //update router configuration to use the Layout component and nested routes
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,13 +31,12 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> }, //Default path rendering the Home component
       { path: "shop", element: <Shop /> },
       { path: "coffee/:id", element: <Coffee /> },
-      { path: "cart", element: <Cart /> },
+      { path: "cart", element: <Cart message={message} /> },
     ],
     errorElement: <Error />,
   },
 ]);
-
-const App = () => {
+  
   return <RouterProvider router={router} />;
 };
 

@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import "../styles/Cart.css";
 
-const Cart = () => {
+const Cart = (props) => {
+ const {message} = props;
+ 
   return (
-    <div>
-      <h1>cart page</h1>
+    <div className="cartContainer">
+      <h1>Your Cart</h1>
+      <div>{message}</div>
     </div>
   );
 };
