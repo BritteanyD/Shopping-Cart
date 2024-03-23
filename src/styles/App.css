@@ -25,7 +25,7 @@
     font-weight: 500;
   }
 
-body {
+html {
   background-image: url(/images/coffeeshop1.png);
   background-size: cover;
   background-attachment: fixed;
@@ -82,4 +82,14 @@ body {
 
 .home {
   margin-right:1300px;
+}
+
+.cart-badge {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
 }

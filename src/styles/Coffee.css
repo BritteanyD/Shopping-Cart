@@ -4,4 +4,34 @@ html {
 
 .coffeeContainer {
     background-color: #fbeee0;
+    display: flex;
 }
+
+.coffeeInfo {
+    flex: 1;
+    padding: 1rem;
+}
+
+.coffeeInfo img {
+    margin-right: 1rem;
+    height: 70vh;
+}
+
+.coffeeInfo button {
+    background-color: #422800;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    color: #fbeee0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0 18px;
+    line-height: 50px;
+}
+
+.coffeeInfo button:active {
+    background-color: #422800;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

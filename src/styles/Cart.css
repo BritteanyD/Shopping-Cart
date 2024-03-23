@@ -4,4 +4,25 @@ html {
 
 .cartContainer {
     background-color: #fbeee0;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    height: 70vh;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-1 {
+    flex: 1;
+  }
+  
+  .col-2 {
+    flex: 2;
+  }
+  
+  .row.center {
+    align-items: center;
+  }

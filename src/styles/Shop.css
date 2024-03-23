@@ -16,10 +16,6 @@
     width: 100%;
 }
 
-.coffeeImage:hover {
-    transform: scale(1.1);
-}
-
 .coffeeInfo {
     color:#422800;
     font-size: larger;
