@@ -15,6 +15,7 @@ const Nav = ({ countCartItems }) => {
               BRITT'S BREWS
             </Link>
           </li>
+          <div className="nav2">
           <li>
             <Link to="/shop" className="shop">
               SHOP
@@ -28,6 +29,7 @@ const Nav = ({ countCartItems }) => {
               )}
             </Link>
           </li>
+          </div>
         </ul>
       </nav>
     </header>
