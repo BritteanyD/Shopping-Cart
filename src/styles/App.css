@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Play:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Play:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -6,24 +6,24 @@
 }
 
 .navbar {
-    background-color: #422800 ;
-    padding: 5px 5px;
-    display: flex;
-    justify-content:start;
-  }
-  
-  .navbar li {
-    display: inline-block;
-    margin-left: 40px;
-    line-height: 70px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fbeee0;
-    font-size: 30px;
-    font-weight: 500;
-  }
+  background-color: #422800;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: start;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 70px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fbeee0;
+  font-size: 30px;
+  font-weight: 500;
+}
 
 html {
   background-image: url(/images/coffeeshop1.png);
@@ -42,14 +42,14 @@ html {
 }
 
 .coffeeMessage {
-  color:#fbeee0;
+  color: #fbeee0;
   text-shadow: 5px 5px 5px #422800;
   font-size: 100px;
 }
 
 .shopNow {
   text-decoration: none;
-  align-self:center;
+  align-self: center;
   background-color: #fbeee0;
   border: 2px solid #422800;
   border-radius: 30px;
@@ -66,7 +66,8 @@ html {
   transform: scale(1.1);
 }
 
-.home-icon, .cart-icon {
+.home-icon,
+.cart-icon {
   display: inline-block;
 }
 
@@ -81,7 +82,7 @@ html {
 }
 
 .home {
-  margin-right:1300px;
+  margin-right: 1300px;
 }
 
 .cart-badge {

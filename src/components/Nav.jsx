@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/App.css";
 
 const Nav = ({ countCartItems }) => {
-  console.log("how many", {countCartItems});
+  console.log("how many", { countCartItems });
   return (
     <header className="navbar">
       <nav>
@@ -24,9 +24,7 @@ const Nav = ({ countCartItems }) => {
             <Link to="/cart" className="cart">
               <img src={cartIcon} alt="cart" className="cart-icon" />
               {countCartItems > 0 && (
-        <button className="cart-badge">
-          {countCartItems}
-        </button>
+                <button className="cart-badge">{countCartItems}</button>
               )}
             </Link>
           </li>

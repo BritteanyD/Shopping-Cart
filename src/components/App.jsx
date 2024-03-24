@@ -8,10 +8,10 @@ import Error from "../Error.jsx";
 import Home from "./Home.jsx";
 
 //wrapper component that includes the Nav and an Outlet for child routes
-const Layout = ({countCartItems}) => {
+const Layout = ({ countCartItems }) => {
   return (
     <div>
-      <Nav countCartItems={countCartItems}/>
+      <Nav countCartItems={countCartItems} />
       <Outlet />
     </div>
   );
@@ -19,23 +19,25 @@ const Layout = ({countCartItems}) => {
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
-  const totalItems = Object.values(cartItems).reduce((acc, item) => acc + item.qty, 0);
+  const totalItems = Object.values(cartItems).reduce(
+    (acc, item) => acc + item.qty,
+    0
+  );
   const onAdd = (coffee) => {
-    console.log("add coffee to cart", coffee)
+    console.log("add coffee to cart", coffee);
+    const myFunction = (x) => {
+      return x.id === coffee.id ? { ...exist, qty: exist.qty + 1 } : x;
+    };
     const exist = cartItems.find((x) => x.id === coffee.id);
     if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === coffee.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
+      setCartItems(cartItems.map(myFunction));
     } else {
       setCartItems([...cartItems, { ...coffee, qty: 1 }]);
     }
   };
 
   const onRemove = (coffee) => {
-    console.log("remove coffee from cart")
+    console.log("remove coffee from cart");
     const exist = cartItems.find((x) => x.id === coffee.id);
     if (exist.qty === 1) {
       setCartItems(cartItems.filter((x) => x.id !== coffee.id));

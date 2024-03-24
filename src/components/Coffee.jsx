@@ -32,16 +32,17 @@ const Coffee = (props) => {
           <h2>Roast Level: {coffeeData[0].roast_level}</h2>
           <h2>${coffeeData[0].price}</h2>
           <button
-  onClick={() => {
-    const coffeeItem = { 
-      name: coffeeData[0].name,
-      price: coffeeData[0].price,
-    };
-    onAdd(coffeeItem);
-  }}
->
-  Add To Cart
-</button>
+            onClick={() => {
+              const coffeeItem = {
+                id: coffeeData[0].id,
+                name: coffeeData[0].name,
+                price: coffeeData[0].price,
+              };
+              onAdd(coffeeItem);
+            }}
+          >
+            Add To Cart
+          </button>
         </div>
       )}
     </div>
