@@ -31,7 +31,7 @@ const Shop = () => {
 
   return (
     <div className="shopContainer">
-      {coffeeData ? (
+      {coffeeData?.length > 0 && ( 
         <div className="coffeeGrid">
           {coffeeData.map((coffee) => (
             <div className="coffeeItems" key={coffee.id}>
@@ -49,8 +49,6 @@ const Shop = () => {
             </div>
           ))}
         </div>
-      ) : (
-        <p>Loading coffees...</p>
       )}
       {chosenCoffee && <Coffee coffee={chosenCoffee} />}
     </div>

@@ -7,15 +7,14 @@
 
 .navbar {
   background-color: #422800;
-  padding: 5px 5px;
+  padding: 10px 30px;
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 
 .navbar li {
   display: inline-block;
-  margin-left: 40px;
-  line-height: 70px;
 }
 
 .navbar a {
@@ -23,6 +22,15 @@
   color: #fbeee0;
   font-size: 30px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 html {
@@ -43,8 +51,12 @@ html {
 
 .coffeeMessage {
   color: #fbeee0;
-  text-shadow: 5px 5px 5px #422800;
   font-size: 100px;
+  text-shadow: 
+  -1px 5px 0px #422800, /* Left shadow */
+    5px 0px 0px #422800, /* Right shadow */
+    5px -1px 0px #422800, /* Top shadow */
+    0px 1px 0px #422800; /* Bottom shadow */
 }
 
 .shopNow {
@@ -66,23 +78,21 @@ html {
   transform: scale(1.1);
 }
 
-.home-icon,
-.cart-icon {
-  display: inline-block;
-}
-
 .home-icon {
   width: 60px;
   height: 60px;
+  margin-right: 10px;
 }
 
 .cart-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
+
 .home {
-  margin-right: 1300px;
+  margin-right: 1400px;
 }
 
 .cart-badge {
@@ -92,5 +102,5 @@ html {
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 500;
-  position: absolute;
+  position: static;
 }

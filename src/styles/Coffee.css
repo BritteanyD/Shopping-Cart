@@ -9,7 +9,7 @@ html {
 
 .coffeeInfo {
   flex: 1;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .coffeeInfo img {
@@ -34,4 +34,8 @@ html {
   background-color: #422800;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+h3 {
+  padding: 5px;
 }

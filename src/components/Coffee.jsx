@@ -21,15 +21,13 @@ const Coffee = (props) => {
 
   return (
     <div className="coffeeContainer">
-      {coffeeData === null ? (
-        <p>Loading coffee...</p>
-      ) : (
+      {coffeeData !== null && (
         <div className="coffeeInfo">
           <h1>{coffeeData[0].name}</h1>
           <img src={coffeeData[0].image_url} />
-          <h2>{coffeeData[0].description}</h2>
-          <h2> Weight: {coffeeData[0].weight} grams</h2>
-          <h2>Roast Level: {coffeeData[0].roast_level}</h2>
+          <h3>{coffeeData[0].description}</h3>
+          <h3> Weight: {coffeeData[0].weight} grams</h3>
+          <h3>Roast Level: {coffeeData[0].roast_level}</h3>
           <h2>${coffeeData[0].price}</h2>
           <button
             onClick={() => {

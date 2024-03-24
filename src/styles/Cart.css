@@ -7,12 +7,11 @@ html {
   padding: 2rem;
   margin: 2rem;
   border-radius: 0.5rem;
-  height: 70vh;
+  height: 80vh;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
 }
 
 .row button,
@@ -42,6 +41,7 @@ html {
   margin: 10px;
 }
 
-.row.center {
-  align-items: center;
-}
+
+
+
+
