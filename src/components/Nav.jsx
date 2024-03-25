@@ -9,12 +9,14 @@ const Nav = ({ countCartItems }) => {
     <header className="navbar">
       <nav>
         <ul>
+          <div className="nav">
           <li>
             <Link to="/" className="home">
               <img src={homeIcon} alt="Home" className="home-icon" />
               BRITT'S BREWS
             </Link>
           </li>
+          </div>
           <div className="nav2">
           <li>
             <Link to="/shop" className="shop">

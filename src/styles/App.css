@@ -21,8 +21,8 @@
 
  ul {
   display: flex;
-  align-items: center;
-  gap: 1000px;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 html {
@@ -82,7 +82,7 @@ html {
   margin-left: 10px;
 }
 
-.nav2 {
+.nav, .nav2 {
   display: flex;
   align-items: center;
 }
